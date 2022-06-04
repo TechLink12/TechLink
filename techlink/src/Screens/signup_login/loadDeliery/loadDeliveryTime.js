@@ -9,7 +9,6 @@ export default function App() {
     <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
         <View style={styles.parentViewContainer}>
-          <Image></Image>
           <Icon
             name="truck-check-outline"
             color="#1e128a"
