@@ -8,6 +8,7 @@ import {
   TextInput,
   Linking,
 } from "react-native";
+// import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function App() {
   return (
@@ -17,53 +18,50 @@ export default function App() {
           backgroundColor: "white",
           width: "100%",
           height: "100%",
-          marginBottom: "-10%",
+          marginBottom:'-10%'
         }}
       >
         <View
           style={{
             justifyContent: "center",
             alignItems: "center",
-            marginTop: "10%",
+            marginTop:'10%',
           }}
         >
           <Image
-            source={require("./assets/varfy.png")}
+            source={require("./assets/reg.png")}
             style={{ width: 200, height: 200 }}
           ></Image>
 
           <Text style={{ fontSize: 25, marginTop: 40, fontWeight: "bold" }}>
-            Verification{" "}
+            Registration{" "}
           </Text>
-          <View style={{ flexDirection: "column" }}>
-            <Text
-              style={{
-                fontSize: 16,
-                marginTop: 10,
-                alignItems: "center",
-                paddingRight: "10%",
-                paddingLeft: "10%",
-              }}
-            >
-              Enter the 4 digit number that was sent {" "}
-            </Text>
-            <Text style={{fontSize:20,fontWeight:"bold",paddingLeft:'28%'}}>+xxx xxxxx xxxx</Text>
-          </View>
+          <Text
+            style={{
+              fontSize: 15,
+              marginTop: 10,
+              alignItems: "center",
+              paddingRight: "10%",
+              paddingLeft: "10%",
+            }}
+          >
+            Enter your phone number to continue, We will send you OTP to verify{" "}
+          </Text>
         </View>
-        <View style={{ flex: 2 }}>
+        <View style={{ flex:1 }}>
           <View
             style={{
               flexDirection: "row",
               justifyContent: "space-evenly",
-              marginTop: "10%",
-              padding: '-10%',
+              marginTop: "15%",
+              padding: 20,
             }}
           >
             <TextInput
               style={{
                 borderRadius: 11,
-                width: "20%",
-                height: "130%",
+                width: "23%",
+                height: "120%",
                 borderBottomWidth: 4,
                 borderRightWidth: 4,
                 borderTopWidth: 0.5,
@@ -71,18 +69,17 @@ export default function App() {
                 borderRightColor: "#3480eb",
                 borderBottomColor: "#3480eb",
                 alignItems: "center",
-                paddingLeft: 25,
-                fontSize:20,
-
+                paddingLeft: 10,
                 paddingBottom: 8,
               }}
               keyboardType="numeric"
+              placeholder="+251"
             ></TextInput>
             <TextInput
               style={{
-                borderRadius: 11,
-                width: "20%",
-                height: "130%",
+                borderRadius: 10,
+                width: "70%",
+                height: "120%",
                 borderBottomWidth: 4,
                 borderRightWidth: 4,
                 borderTopWidth: 0.5,
@@ -90,49 +87,11 @@ export default function App() {
                 borderRightColor: "#3480eb",
                 borderBottomColor: "#3480eb",
                 alignItems: "center",
-                paddingLeft: 25,
+                paddingTop: -15,
+                paddingLeft: 10,
                 paddingBottom: 8,
-                fontSize:20,
+              }}              keyboardType="numeric"
 
-              }}
-              keyboardType="numeric"
-            ></TextInput>
-            <TextInput
-              style={{
-                borderRadius: 11,
-                width: "20%",
-                height: "130%",
-                borderBottomWidth: 4,
-                borderRightWidth: 4,
-                borderTopWidth: 0.5,
-                borderLeftWidth: 0.5,
-                borderRightColor: "#3480eb",
-                borderBottomColor: "#3480eb",
-                alignItems: "center",
-                paddingLeft: 25,
-                paddingBottom: 8,
-                fontSize:20,
-
-              }}
-              keyboardType="numeric"
-            ></TextInput>
-            <TextInput
-              style={{
-                borderRadius: 11,
-                width: "20%",
-                height: "130%",
-                borderBottomWidth: 4,
-                borderRightWidth: 4,
-                borderTopWidth: 0.5,
-                borderLeftWidth: 0.5,
-                borderRightColor: "#3480eb",
-                borderBottomColor: "#3480eb",
-                alignItems: "center",
-                paddingLeft: 25,
-                paddingBottom: 8,
-                fontSize:20,
-              }}
-              keyboardType="numeric"
             ></TextInput>
           </View>
           <View
@@ -151,23 +110,52 @@ export default function App() {
             >
               <View
                 style={{
-                  paddingTop:'60%',
-                  paddingLeft:'20%'
+                  flexDirection: "row",
                 }}
               >
+                <Text>By continuing You agree with our</Text>
                 <Text
                   style={{
                     color: "#db6e3b",
                     paddingLeft: 5,
-                    fontSize: 18,
+                    fontSize:15,
                   }}
                   onPress={() => Linking.openURL("")}
                 >
-                Resend code in 00:038{" "}
+                  terms & condition{" "}
+                </Text>
+              </View>
+
+              <View style={{ flexDirection: "row",paddingLeft:'30%' }}>
+                <Text>and</Text>
+                <Text
+                  style={{
+                    color: "#db6e3b",
+                    flexDirection: "row",
+                    marginLeft: 5,
+                  }}
+                  onPress={() => Linking.openURL("")}
+                >
+                  privacy policy
                 </Text>
               </View>
             </View>
+            
           </View>
+          <View style={{marginTop:"10%", paddingRight:10, alignItems:"center"}}>
+              <TouchableOpacity style={{
+                backgroundColor:'#101b91',
+                width:'75%',
+                height:'35%',
+                borderRadius:15,
+                borderRightWidth:4,
+                borderBottomWidth:4,
+                borderBottomColor:'#db711a',
+                borderRightColor:'#db711a',
+              }}>
+                <Text style={{fontWeight:"bold",color:'white',paddingLeft:'30%',fontSize:20,paddingTop:5}}>Continue</Text>
+              </TouchableOpacity>
+            </View>
         </View>
       </View>
     </View>
