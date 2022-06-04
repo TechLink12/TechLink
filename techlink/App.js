@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Text, View, StyleSheet, Image,FontAwesomeIcon } from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity, TextInput } from "react-native";
+// import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function App() {
   return (
@@ -9,42 +10,80 @@ export default function App() {
           backgroundColor: "white",
           width: "100%",
           height: "100%",
-          borderRadius: 60,
-          borderColor: "#1e128a",
-          borderRightWidth: 7,
-          borderBottomWidth: 7,
-          borderTopWidth: 0.5,
-          borderLeftWidth: 0.9,
         }}
       >
         <View
-          style={{ flex: 3, justifyContent: "center", alignItems: "center" }}
+          style={{
+            flex: 3,
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: -160,
+          }}
         >
-          <FontAwesomeIcon icon="fa-thin fa-box-taped" style />
           <Image
-          style={{}}
-            source={{
-              uri: "https://img.icons8.com/pastel-glyph/64/undefined/box-search-1.png",
+            source={require("./assets/reg.png")}
+            style={{ width: 200, height: 200 }}
+          ></Image>
+
+          <Text style={{ fontSize: 25, marginTop: 40, fontWeight: "bold" }}>
+            Registration{" "}
+          </Text>
+          <Text
+            style={{
+              fontSize: 15,
+              marginTop: 10,
+              alignItems: "center",
+              paddingRight: "10%",
+              paddingLeft: "10%",
             }}
-            width={100}
-            height={100}
-          />
-          <Text style={{ fontSize: 25 }}>Find Load to deliver </Text>
+          >
+            Enter your phone number to continue, We will send you OTP to verify{" "}
+          </Text>
         </View>
-        <View style={{ flex: 1, backgroundColor: "white" }}>
+        <View style={{ flex: 1 }}>
           <View
             style={{
               flexDirection: "row",
               justifyContent: "space-evenly",
-              marginTop: 100,
-              padding:20,
+              marginTop: 10,
+              padding: 20,
             }}
           >
-            <Text>Login</Text>
-            <Text>Sig Up</Text>
+            <TextInpu style={{borderRadius:20,}}></TextInpu>
           </View>
-          <View style={{ alignItems: "center" }}>
-            <Text>Slider</Text>
+          <View
+            style={{
+              alignItems: "center",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <Text
+              style={{
+                backgroundColor: "#db6e3b",
+                width: 9,
+                height: 9,
+                borderRadius: 100,
+                marginRight: 5,
+              }}
+            ></Text>
+            <Text
+              style={{
+                backgroundColor: "#adaaa8",
+                width: 8,
+                height: 8,
+                borderRadius: 100,
+                marginRight: 5,
+              }}
+            ></Text>
+            <Text
+              style={{
+                backgroundColor: "#adaaa8",
+                width: 8,
+                height: 8,
+                borderRadius: 100,
+              }}
+            ></Text>
           </View>
         </View>
       </View>

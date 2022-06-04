@@ -28,31 +28,14 @@ export default function App() {
             flex: 3,
             justifyContent: "center",
             alignItems: "center",
-            paddingTop: 100,
           }}
         >
-          <Image></Image>
-          <Icon
-            name="truck-check-outline"
-            color="#1e128a"
-            size={150}
-            style={{ marginTop: -120, height: 250 }}
-          ></Icon>
-          {/* <Icons
-            name="ios-search-outline"
-            color="#1e128a"
-            borderWidth={0.1}
-            size={90}
-            style={{ marginTop: -100, height: 100 }}
-          ></Icons> */}
-
-          {/*  */}
-          {/* <Text style={{ fontSize: 25, marginTop: 80, fontWeight: "bold" }}>
-            Find Load to deliver{" "}
-          </Text> */}
-          <Text style={{ fontSize: 25, marginTop:-80, fontWeight: "bold" }}>
-            Deliver loads on time{" "}
+          <Image source={require('./assets/bi.png')} style={{width:110,height:150}}></Image>
+         
+          <Text style={{ fontSize: 25, marginTop: 50, fontWeight: "bold" }}>
+            Place you bid{" "}
           </Text>
+         
         </View>
         <View style={{ flex: 1}}>
           <View
@@ -63,10 +46,10 @@ export default function App() {
               padding: 20,
             }}
           >
-            {/* <TouchableOpacity
+            <TouchableOpacity
               style={{
                 backgroundColor: "white",
-                width: 130,
+                width: '40%',
                 height: 50,
                 alignItems: "center",
                 justifyContent: "center",
@@ -74,16 +57,16 @@ export default function App() {
                 borderRadius: 15,
 
                 borderRightWidth: 3,
-                borderBottomWidth: 3,
+                borderBottomWidth: 4,
                 borderTopWidth: 0.5,
                 borderLeftWidth: 0.5,
               }}
             >
-              <Text>Skip</Text>
-            </TouchableOpacity> */}
+              <Text style={{fontWeight:"bold"}}>Skip</Text>
+            </TouchableOpacity>
             <TouchableOpacity
               style={{
-                width: "75%",
+                width: "40%",
 
                 height: 50,
                 alignItems: "center",
@@ -98,7 +81,7 @@ export default function App() {
                 borderLeftWidth: 0.5,
               }}
             >
-              <Text style={{ color: "white",fontWeight:'bold' }}>Get Started</Text>
+              <Text style={{ color: "white",fontWeight:'bold' }}>Next</Text>
             </TouchableOpacity>
           </View>
           <View
