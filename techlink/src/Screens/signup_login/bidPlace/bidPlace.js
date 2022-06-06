@@ -4,7 +4,8 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icons from "react-native-vector-icons/Ionicons";
 import styles from "./style";
-export default function App() {
+
+const bid=()=> {
   return (
     <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
@@ -50,3 +51,4 @@ export default function App() {
     </View>
   );
 }
+export default bid;

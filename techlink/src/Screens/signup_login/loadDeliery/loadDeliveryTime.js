@@ -4,7 +4,8 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icons from "react-native-vector-icons/Ionicons";
 import styles from "./style";
-export default function App() {
+
+const loaddelivery=()=> {
   return (
     <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
@@ -29,7 +30,7 @@ export default function App() {
               padding: 20,
             }}
           >
-            <TouchableOpacity style={styles.GetStartdBtn}>
+            <TouchableOpacity style={styles.GetStartdBtn} >
               <Text style={{ color: "white", fontWeight: "bold" }}>
                 Get Started
               </Text>
@@ -45,3 +46,5 @@ export default function App() {
     </View>
   );
 }
+
+export default loaddelivery

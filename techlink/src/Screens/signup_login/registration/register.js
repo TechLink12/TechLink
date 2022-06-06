@@ -9,7 +9,7 @@ import {
   Linking,
 } from "react-native";
 import styles from "./style";
-export default function App() {
+const Register=()=> {
   return (
     <View style={{ paddingTop: 40, paddingBottom: -30, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
@@ -82,3 +82,4 @@ export default function App() {
     </View>
   );
 }
+export default Register
