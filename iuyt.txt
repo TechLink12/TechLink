@@ -34,7 +34,7 @@ export default function App() {
           });
         }}
         query={{
-          key: "AIzaSyC9NZEwBc0II-1gW9EGj3nar0aIQ940_OY",
+          key: "",
           language: "en",
           components: "country:us",
           types: "establishment",
