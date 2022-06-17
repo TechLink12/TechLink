@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
+
 // import Icon from "react-native-vector-icons/FontAwesome";
 import styles from "./style";
 
-const Findload=()=> {
+const Findload=( navigation)=> {
   return (
     <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
@@ -15,7 +16,7 @@ const Findload=()=> {
           }}
         >
           <Image
-            source={require("./assets/techpkg.png")}
+            source={require("../../../../assets/techpkg.png")}
             style={{ width: 200, height: 150 }}
           ></Image>
 
@@ -28,7 +29,7 @@ const Findload=()=> {
             <TouchableOpacity style={styles.Skipbtn}>
               <Text style={{ fontWeight: "bold" }}>Skip</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.Nextbtn}>
+            <TouchableOpacity style={styles.Nextbtn} onPress={() => navigation.navigate('Register')}>
               <Text style={{ color: "white", fontWeight: "bold" }}>Next</Text>
             </TouchableOpacity>
           </View>

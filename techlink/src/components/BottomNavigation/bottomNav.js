@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-import styles from "./style"; 
+// import styles from "./style"; 
 
 // Screens
 import Home from "../../components/home/home";
@@ -20,7 +20,7 @@ const loadName = "Loads";
 const shipmentName = "Shepment";
 const profileName = "Profile";
 
-const bottomNav = () => {
+export default function BottomNav(){
   const Tab = createBottomTabNavigator();
   return (
     <NavigationContainer>
@@ -49,4 +49,13 @@ const bottomNav = () => {
     </NavigationContainer>
   );
 };
-export default bottomNav
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+
+    backgroundColor: "#fff",
+    marginTop: 500,
+    
+  },
+});
