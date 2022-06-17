@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 import { StyleSheet, Text, View, Dimensions } from "react-native";
-import BottomNav from "./src/components/BottomNavigation/bottomNav";
 
-
-
-
-export default function App() {
+export default function profile({navigation}) {
   return (
-  <BottomNav></BottomNav>
+    <View style={styles.container}>
+      <Text >
+this is profile page       </Text>
+      <Text style={styles.stpc}>{StepCount}</Text>
+    </View>
   );
 }
 

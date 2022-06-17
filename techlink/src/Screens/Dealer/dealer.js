@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 
 import { StyleSheet, Text, View, Dimensions } from "react-native";
-import BottomNav from "./src/components/BottomNavigation/bottomNav";
-
-
-
 
 export default function App() {
   return (
-  <BottomNav></BottomNav>
+    <View style={styles.container}>
+      <Text >
+        is pedometer available got 1
+      </Text>
+      <Text style={styles.stpc}>{StepCount}</Text>
+    </View>
   );
 }
 
