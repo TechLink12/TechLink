@@ -62,12 +62,12 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingLeft: "5%",
   },
-  PolicyContainer2: { justifyContent: "space-evenly", paddingTop: "25%" },
+  PolicyContainer2: { justifyContent: "space-evenly", paddingTop: "5%" },
 
   continuebtn: {
     backgroundColor: "#101b91",
     width: "75%",
-    height: "35%",
+    height: "100%",
     borderRadius: 15,
     borderRightWidth: 4,
     borderBottomWidth: 4,

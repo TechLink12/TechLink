@@ -5,9 +5,10 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icons from "react-native-vector-icons/Ionicons";
 import styles from "./style";
 
-const bid=()=> {
+
+const bid=( { navigation })=> {
   return (
-    <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
+    <View style={{ flex:1, paddingTop: 20, paddingBottom: 20, paddingHorizontal: 10 }}>
       <View style={styles.parentview}>
         <View
           style={{
@@ -37,7 +38,7 @@ const bid=()=> {
             <TouchableOpacity style={styles.Skipbtn}>
               <Text style={{ fontWeight: "bold" }}>Skip</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.Nextbtn}>
+            <TouchableOpacity style={styles.Nextbtn} onPress={() => navigation.navigate('DeliverLoad')} >
               <Text style={{ color: "white", fontWeight: "bold" }}>Next</Text>
             </TouchableOpacity>
           </View>

@@ -4,9 +4,9 @@ import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 // import Icon from "react-native-vector-icons/FontAwesome";
 import styles from "./style";
 
-const Findload=( navigation)=> {
+const Findload=( {navigation})=> {
   return (
-    <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
+    <View style={{ flex:1, paddingTop: 20, paddingBottom: 20, paddingHorizontal: 10 }}>
       <View style={styles.parentview}>
         <View
           style={{

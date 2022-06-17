@@ -5,9 +5,9 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Icons from "react-native-vector-icons/Ionicons";
 import styles from "./style";
 
-const loaddelivery=()=> {
+const loaddelivery=( {navigation} )=> {
   return (
-    <View style={{ paddingTop: 60, paddingBottom: 40, paddingHorizontal: 15 }}>
+    <View style={{ flex:1, paddingTop: 20, paddingBottom: 20, paddingHorizontal: 10 }}>
       <View style={styles.parentview}>
         <View style={styles.parentViewContainer}>
           <Icon

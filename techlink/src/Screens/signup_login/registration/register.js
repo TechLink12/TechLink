@@ -9,14 +9,14 @@ import {
   Linking,
 } from "react-native";
 import styles from "./style";
-const Register=()=> {
+const Register=( {navigation} )=> {
   return (
-    <View style={{ paddingTop: 40, paddingBottom: -30, paddingHorizontal: 15 }}>
+    <View style={{ flex:1, paddingTop: 40, paddingBottom: -30, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
         <View style={styles.parentViewContainer}>
           <Image
             source={require("../../../../assets/reg.png")}
-            style={{ width: 200, height: 200 }}
+            style={{ width: 100, height: 100 }}
           ></Image>
 
           <Text style={{ fontSize: 25, marginTop: 40, fontWeight: "bold" }}>
@@ -73,7 +73,7 @@ const Register=()=> {
           <View
             style={{ marginTop: "10%", paddingRight: 10, alignItems: "center" }}
           >
-            <TouchableOpacity style={styles.continuebtn}>
+            <TouchableOpacity style={styles.continuebtn}  onPress={() => navigation.navigate('Verification')}>
               <Text style={styles.ContinueTxt}>Continue</Text>
             </TouchableOpacity>
           </View>

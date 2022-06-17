@@ -59,6 +59,24 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingLeft: "5%",
   },
+
+  continuebtn: {
+    backgroundColor: "#101b91",
+    width: "75%",
+    height: "100%",
+    borderRadius: 15,
+    borderRightWidth: 4,
+    borderBottomWidth: 4,
+    borderBottomColor: "#db711a",
+    borderRightColor: "#db711a",
+  },
+  ContinueTxt: {
+    fontWeight: "bold",
+    color: "white",
+    paddingLeft: "30%",
+    fontSize: 20,
+    paddingTop: 5,
+  },
 });
 
 export default styles;

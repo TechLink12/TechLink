@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import styles from "./style";
 
-export default function App() {
+const Verification =( {navigation} )=>{
   return (
     <View style={{ paddingTop: 40, paddingBottom: -30, paddingHorizontal: 15 }}>
       <View style={styles.parentview}>
@@ -59,6 +59,13 @@ export default function App() {
               keyboardType="numeric"
             ></TextInput>
           </View>
+          <View
+            style={{ marginTop: "10%", paddingRight: 10, alignItems: "center" }}
+          >
+            <TouchableOpacity style={styles.continuebtn}  onPress={() => navigation.navigate('PlaceYourBid')}>
+              <Text style={styles.ContinueTxt}>Continue</Text>
+            </TouchableOpacity>
+          </View>
           <View style={styles.ResendContainer2}>
             <View
               style={{
@@ -81,3 +88,4 @@ export default function App() {
     </View>
   );
 }
+export default Verification
